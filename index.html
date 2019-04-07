@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>How to make tea</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>How to make tea</h1>
+        <img src="https://i.imgur.com/FC1zB9T.jpg" />
+        <figcaption>
+          At the very least, tea is a flavorful way of getting enaugh fluid into
+          your body each day.On top of that, studies have shown teas can help
+          protect your teath and your heart
+        </figcaption>
+      </header>
+      <section
+        id="ingredients"
+        onmouseover="ingredientsHover()"
+        onmouseout="ingredientsNormal()"
+      >
+        <h2>ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
+        <ul>
+          <li>Tea bag</li>
+          <li>Water</li>
+          <li>Milk-Dairy/plant-based (optional)</li>
+          <li>Sugar/Honey</li>
+        </ul>
+      </section>
+      <section
+        id="preparation"
+        onmouseover="preparationHover()"
+        onmouseout="preparationNormal()"
+      >
+        <h2>preparation <i class="fa fa-check" aria-hidden="true"></i></h2>
+        <ol>
+          <li>
+            Run the tap a little so the water's nicely aerated, and only boil it
+            once to keep the oxygen level up. Oxygen in water helps flavour!
+          </li>
+          <li>pop a tea bag into your mug (always a big mug)</li>
+          <li>pour the hot water over the tea bag and stir briefly.</li>
+          <li>
+            tea needs time to unlock all its flavour, so give it 3-4 minutes to
+            do its thing. this is a perfect time to grab a sneaky cookie or
+            daydream about vacations.
+          </li>
+          <li>
+            Before removing the tea bag, gently squish it with a spoon against
+            the side of the mug. not too much or you'll make it bitter.
+          </li>
+          <li>
+            If you want, throw in some milk or sugar or Honey or nothing else at
+            all.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+      <footer>
+        <a href="https://www.linkedin.com/in/osamak13/"
+          >copyright: Sam Arbid 2019®</a
+        >
+      </footer>
+    </div>
+    <script>
+      function ingredientsHover() {
+        document.getElementById(
+          "ingredients"
+        ).firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+      function ingredientsNormal() {
+        document.getElementById(
+          "ingredients"
+        ).firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+      function preparationHover() {
+        document.getElementById(
+          "preparation"
+        ).firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+      function preparationNormal() {
+        document.getElementById(
+          "preparation"
+        ).firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Karma");
+
+#container {
+  width: 60%;
+  margin: auto;
+}
+
+body {
+  font-family: Karma, Arial;
+  color: darkblue;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+  border-radius: 5%;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.43);
+}
+h1 {
+  font-size: 300%;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: orange;
+}
+footer {
+  font-size: 50%;
+  color: white;
+  margin-top: 70px;
+  background-color: orange;
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width: 90%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 200%;
+  }
+}
